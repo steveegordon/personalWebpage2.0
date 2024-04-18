@@ -1,0 +1,7 @@
+.hexTile {
+    background-color: blue;
+    width: 190px;
+    grid-column: span 4;
+    aspect-ratio: 1;
+    clip-path: path("M 47.5 0 L 142.5 0 L 190 95 L 142.5 190 L 47.5 190 L 0 95 L 47.5 0 Z");
+}
