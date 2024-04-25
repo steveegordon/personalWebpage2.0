@@ -1,7 +1,23 @@
-.hexTile {
-    background-color: blue;
-    width: 190px;
+.hexShadow {
     grid-column: span 4;
     aspect-ratio: 1;
-    clip-path: path("M 47.5 0 L 142.5 0 L 190 95 L 142.5 190 L 47.5 190 L 0 95 L 47.5 0 Z");
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+    filter: border(10px black solid);
+}
+
+.hexTile {
+    background-color: blue;
+    margin: 5px;
+
+    grid-column: span 4;
+    aspect-ratio: 1;
+    clip-path: path("M 50 5 L 140 5 L 185.0001 95 L 140 185.0001 L 50 185.0001 L 5 95 L 50 5 Z");
+
+    &:hover {
+        filter: contrast(200%);
+    }
+
+    &:not(:hover) {
+        filter: contrast(-200%);
+    }
 }

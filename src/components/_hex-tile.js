@@ -2,8 +2,10 @@ import './_hex-tile.css';
 
 function _hexTile() {
     return (
-        <div className="hexTile">
+        <div className="hexShadow">
+            <div className="hexTile">
 
+            </div>
         </div>
     );
 }
